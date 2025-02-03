@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1>Hey, Javascript</h1>
+    <p>In javascript there are 3 keywords <br>
+        <ol>
+            <li>var</li>
+            <li>let</li>
+            <li>const</li>
+        </ol>
+        
+    </p>
+    <script>
+        var message = "Hello from javascript";
+        console.log(message,":", typeof(message))
+
+        var num = 4567;
+        console.log(num, typeof(num))
+
+        var isGet = true;
+        console.log(isGet, typeof(isGet))
+
+        var a;
+        console.log(a, typeof(a))
+
+    //can  redeclare and reinitialized
+        var message = "Hi India!!";
+        console.log(message)
+
+    //can not redeclare but reinitialized
+        let product = "laptop";
+        console.log(product)
+        product = "fan";
+        console.log(product)
+
+    //can not redeclare or reinitialized
+        const count = 10;
+        console.log(count)
+        //count = 20; //Uncaught TypeError: Assignment to constant variable.
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
