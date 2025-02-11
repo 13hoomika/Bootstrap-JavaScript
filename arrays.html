@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JavaScript</title>
+</head>
+<h1>Arrays in JavaScript</h1>
+<body>
+    <script>
+    
+    function array(){
+        let num=[2,4,66,11];
+        /*for(let i=0; i <num.length;i++){
+            console.log(num[i]);
+        }*/
+        let add=num.push(100);
+        console.log("Add new element: ",num);
+        let remove=num.pop();
+        console.log("Removed element is: ",remove);
+        console.log("Remove element from last index: ",num);
+
+        let addNewElement=num.unshift(200);
+        console.log("Adds new element at 0th index: ",num);
+
+        let removeElement=num.shift();
+        console.log("Removed element is: ",removeElement);
+        console.log("Removes element at 0th index: ",num);
+
+        num.splice(3,0,33,55,66);
+        console.log("Adds or removes elements at given index position: ",num)
+        let group=num.slice(1,4)
+        console.log("Groups into new array: ",group)
+    } 
+array()
+</script>
+</body>
+</html>
